@@ -29,8 +29,17 @@
     <div class="form-group">
         <label form="categoria">Categoria</label>
         <div>
-            <InputNumber @bind-Value="@Produto.CategoriaId" class="form-control"/>
-            <ValidationMessage For="()=> Produto.CategoriaId"/>
+            <select @onchange="CategoriaSelectionChange" class="form-control">
+                @if (categorias != null)
+                {
+                    @foreach (var categoria in categorias)
+                    {
+                        <option value="@categoria.CategoriaId" class="form-control">
+                            @categoria.Nome
+                        </option>
+                    }
+                }
+            </select>
         </div>
     </div>
 
@@ -49,10 +58,30 @@
 </EditForm>
 
 @code {
+    List<Categoria>? categorias;
+
     [Inject] public NavigationManager navigation { get; set; }
+    [Inject] public HttpClient http { get; set; }
     [Parameter] public Produto Produto { get; set; } = new Produto();
     [Parameter] public string ButtonTextSubmit { get; set; } = "Salvar";
     [Parameter] public string ButtonTextCancelar { get; set; } = "Cancelar";
     [Parameter] public EventCallback OnValidSubmit { get; set; }
 
+    protected override async Task OnInitializedAsync()
+    {
+        await CarregarCategorias();
+    }
+
+    private async Task CarregarCategorias()
+    {
+        categorias = await http.GetFromJsonAsync<List<Categoria>>("api/Categoria");
+    }
+
+    void CategoriaSelectionChange(ChangeEventArgs e)
+    {
+        if (int.TryParse(e.Value.ToString(), out int id))
+        {
+            Produto.CategoriaId = id;
+        }
+    }
 }
