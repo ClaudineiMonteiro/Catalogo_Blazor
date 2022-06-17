@@ -1,0 +1,12 @@
+C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Shared\bin\Debug\net6.0\Catalogo_Blazor.Shared.deps.json
+C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Shared\bin\Debug\net6.0\Catalogo_Blazor.Shared.dll
+C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Shared\bin\Debug\net6.0\Catalogo_Blazor.Shared.pdb
+C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Shared\obj\Debug\net6.0\Catalogo_Blazor.Shared.csproj.AssemblyReference.cache
+C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Shared\obj\Debug\net6.0\Catalogo_Blazor.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Shared\obj\Debug\net6.0\Catalogo_Blazor.Shared.AssemblyInfoInputs.cache
+C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Shared\obj\Debug\net6.0\Catalogo_Blazor.Shared.AssemblyInfo.cs
+C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Shared\obj\Debug\net6.0\Catalogo_Blazor.Shared.csproj.CoreCompileInputs.cache
+C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Shared\obj\Debug\net6.0\Catalogo_Blazor.Shared.dll
+C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Shared\obj\Debug\net6.0\refint\Catalogo_Blazor.Shared.dll
+C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Shared\obj\Debug\net6.0\Catalogo_Blazor.Shared.pdb
+C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Shared\obj\Debug\net6.0\ref\Catalogo_Blazor.Shared.dll

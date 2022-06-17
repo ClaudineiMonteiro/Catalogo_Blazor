@@ -1,0 +1,86 @@
+﻿<nav aria-label="Paginacao">
+    <ul class="pagination justify-content-center">
+        @foreach (var link in links)
+        {
+            <li @onclick="@(()=> PaginaSelecionadaLink(link))" style="cursor: pointer;" class="page-item @(link.Enabled ? null : "disabled") @(link.Active ? "active" : null)">
+                <span class="page-link" href="#">@link.Text</span>
+            </li>
+        }
+    </ul>
+</nav>
+
+@code {
+    [Parameter] public int PaginaAtual { get; set; } = 1;
+    [Parameter] public int QuantidadeTotalPaginas { get; set; } = 5;
+    [Parameter] public int Raio { get; set; } = 3;
+    [Parameter] public EventCallback<int> PaginaSelecionada { get; set; }
+
+    List<LinkModel> links;
+
+    async Task PaginaSelecionadaLink(LinkModel link)
+    {
+        if (link.Page == PaginaAtual)
+        {
+            return;
+        }
+
+        if (!link.Enabled)
+        {
+            return;
+        }
+
+        PaginaAtual = link.Page;
+        await PaginaSelecionada.InvokeAsync(link.Page);
+    }
+
+    protected override void OnParametersSet()
+    {
+        CarregaPagina();
+    }
+
+    private void CarregaPagina()
+    {
+        links = new List<LinkModel>();
+
+        //Tratar o link anterior
+        bool isLinkPaginaAnteriorHabilitado = PaginaAtual != 1;
+        int paginaAnterior = PaginaAtual - 1;
+
+        links.Add(new LinkModel(paginaAnterior, isLinkPaginaAnteriorHabilitado, "Anterior"));
+
+        //Tratar o link das paginas especificas
+        for (int i = 1; i <= QuantidadeTotalPaginas; i++)
+        {
+            if (i >= (PaginaAtual - Raio) && i <= (PaginaAtual + Raio))
+            {
+                links.Add(new LinkModel(i) 
+                {
+                    Active = (PaginaAtual == i)
+                });
+            }
+        }
+
+        //Tratar o link para a proxima pagina
+        bool isLinkProximaHabilitado = PaginaAtual != QuantidadeTotalPaginas;
+        int proximaPagina = PaginaAtual + 1;
+
+        links.Add(new LinkModel(proximaPagina, isLinkProximaHabilitado, "Próximo"));
+    }
+
+    class LinkModel
+    {
+        public string Text { get; set; }
+        public int Page { get; set; }
+        public bool Enabled { get; set; }
+        public bool Active { get; set; }
+
+        public LinkModel(int page) : this(page, true) {}
+        public LinkModel(int page, bool enabled) : this(page, enabled, page.ToString()) {}
+        public LinkModel(int page, bool enabled, string text)
+        {
+            Page = page;
+            Enabled = enabled;
+            Text = text;
+        }
+    }
+}

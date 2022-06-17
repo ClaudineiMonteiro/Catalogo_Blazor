@@ -1,0 +1,133 @@
+﻿@page "/categoria"
+@using Catalogo_Blazor.Shared
+@inject HttpClient Http
+@using System.Text.Json;
+
+<h2>Categorias</h2>
+<div>
+    <a class="btn btn-success" href="categoria/create">Criar Categoria</a>
+</div>
+<br />
+
+<div class="form-check-inline">
+    <label class="sr-only" for="filter-name">Filtro</label>
+    <input type="text" class="form-control mb-2 mr-sm-2" @bind="nomeFiltro" placeholder="Filtrar pelo nome"/>
+    <button type="button" class="btn btn-primary mr-sm-2 mb-2" @onclick="Filtrar">
+        Filtrar
+    </button>
+    <button type="button" class="btn btn-danger mb-2" @onclick="LimparFiltro">
+        Limpar
+    </button>
+</div>
+
+@if(categorias == null)
+{
+    <p><em>Carregando...</em></p>
+}
+else if (categorias.Count == 0)
+{
+    <p><em>Não existem categorias cadastradas...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <th>Categoria</th>
+            <th>Descrição</th>
+            <th>Editar</th>
+            <th>Excluir</th>
+        </thead>
+        <tbody>
+            @foreach (var categoria in categorias)
+           {               
+                <tr>
+                    <td>@categoria.Nome</td>
+                    <td>@categoria.Descricao</td>
+                    <td>
+                        <a class="btn btn-primary" href="categoria/edit/@categoria.CategoriaId">Editar</a>
+                    </td>
+                    <td>
+                        <a class="btn btn-danger" @onclick="@(()=> DeletarCategoria(categoria.CategoriaId))">Deletar</a>
+                    </td>
+                </tr>
+           }
+
+        </tbody>
+    </table>
+}
+
+<ConfirmaExclusao @ref="confirma" onCancela="@CancelaConfirma" onConfirma="@DeletaConfirma">
+    <div>Deseja realamente excluir esta categoria?</div>
+</ConfirmaExclusao>
+
+
+<Paginacao QuantidadeTotalPaginas="QuantidadeTotalPaginas" PaginaAtual="PaginaAtual" Raio="2" PaginaSelecionada="PaginaSelecionada">
+
+</Paginacao>
+
+@code {
+    private List<Categoria>? categorias { get; set; }
+
+    int QuantidadeTotalPaginas;
+    int PaginaAtual = 1;
+    string nomeFiltro = string.Empty;
+
+
+    ConfirmaExclusao confirma = new ConfirmaExclusao();
+    int codigoCategoria;
+
+    protected override async Task OnInitializedAsync()
+    {
+        confirma.Ocultar();
+        await CarregarCategorias();
+    }   
+
+    private async Task Filtrar()
+    {
+        PaginaAtual = 1;
+        await CarregarCategorias();
+    }
+
+    private async Task LimparFiltro()
+    {
+        nomeFiltro = string.Empty;
+        PaginaAtual = 1;
+        await CarregarCategorias();
+    }
+
+    private async Task PaginaSelecionada(int pagina)
+    {
+        PaginaAtual = pagina;
+        await CarregarCategorias(pagina);
+    }
+
+    private async Task CarregarCategorias(int pagina = 1, int quantidadePorPagina = 5)
+    {
+        var httpResponse = await Http.GetAsync($"api/Categoria?pagina={pagina}&quantidadePorPagina={quantidadePorPagina}&nome={nomeFiltro}");
+        if (httpResponse.IsSuccessStatusCode)
+        {
+            QuantidadeTotalPaginas = int.Parse(httpResponse.Headers.GetValues("totalPaginas").FirstOrDefault() ?? "1");
+            var responseString = await httpResponse.Content.ReadAsStringAsync();
+            categorias = JsonSerializer.Deserialize<List<Categoria>>(responseString, new JsonSerializerOptions() { PropertyNameCaseInsensitive = true});
+        }       
+    }
+
+    private void DeletarCategoria(int categoriaId)
+    {
+        confirma.Exibir();
+        codigoCategoria = categoriaId;
+
+    }
+
+    private async Task DeletaConfirma()
+    {
+        await Http.DeleteAsync($"api/categoria/{codigoCategoria}");
+        confirma.Ocultar();
+        await CarregarCategorias();
+    }
+
+    private void CancelaConfirma()
+    {
+        confirma.Ocultar();
+    }
+}
