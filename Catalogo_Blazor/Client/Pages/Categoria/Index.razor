@@ -9,16 +9,15 @@
 </div>
 <br />
 
-<div class="form-check-inline">
-    <label class="sr-only" for="filter-name">Filtro</label>
+<form class="row gx-3 gy-2 align-items-center">
+  <div class="col-sm-3">
     <input type="text" class="form-control mb-2 mr-sm-2" @bind="nomeFiltro" placeholder="Filtrar pelo nome"/>
-    <button type="button" class="btn btn-primary mr-sm-2 mb-2" @onclick="Filtrar">
-        Filtrar
-    </button>
-    <button type="button" class="btn btn-danger mb-2" @onclick="LimparFiltro">
-        Limpar
-    </button>
-</div>
+  </div>
+  <div class="col-sm-3">
+    <button type="button" class="btn btn-primary mr-sm-2 mb-2" @onclick="Filtrar">Filtrar</button>
+    <button type="button" class="btn btn-danger mb-2" @onclick="LimparFiltro">Limpar</button>
+  </div>  
+</form>
 
 @if(categorias == null)
 {
@@ -26,7 +25,14 @@
 }
 else if (categorias.Count == 0)
 {
-    <p><em>Não existem categorias cadastradas...</em></p>
+    if (string.IsNullOrEmpty(nomeFiltro) || nomeFiltro == "***")
+    {
+        <p><em>Não existem categorias cadastradas...</em></p>
+    }
+    else
+    {
+        <p><em>@("Não existem categorias cadastradas para nome = "+ @nomeFiltro)</em></p>
+    }
 }
 else
 {
@@ -66,16 +72,18 @@ else
 </Paginacao>
 
 @code {
+    #region Properties
     private List<Categoria>? categorias { get; set; }
 
     int QuantidadeTotalPaginas;
     int PaginaAtual = 1;
     string nomeFiltro = string.Empty;
 
-
     ConfirmaExclusao confirma = new ConfirmaExclusao();
     int codigoCategoria;
+    #endregion
 
+    #region Methods
     protected override async Task OnInitializedAsync()
     {
         confirma.Ocultar();
@@ -103,7 +111,8 @@ else
 
     private async Task CarregarCategorias(int pagina = 1, int quantidadePorPagina = 5)
     {
-        var httpResponse = await Http.GetAsync($"api/Categoria?pagina={pagina}&quantidadePorPagina={quantidadePorPagina}&nome={nomeFiltro}");
+        var address = $"api/Categoria?pagina={pagina}&quantidadePorPagina={quantidadePorPagina}&nome={(string.IsNullOrEmpty(nomeFiltro) ? "***" : nomeFiltro)}";
+        var httpResponse = await Http.GetAsync(address);
         if (httpResponse.IsSuccessStatusCode)
         {
             QuantidadeTotalPaginas = int.Parse(httpResponse.Headers.GetValues("totalPaginas").FirstOrDefault() ?? "1");
@@ -130,4 +139,5 @@ else
     {
         confirma.Ocultar();
     }
+    #endregion
 }

@@ -22,9 +22,9 @@ public class CategoriaController : ControllerBase
     public async Task<ActionResult<List<Categoria>>> Get([FromQuery] Paginacao paginacao, [FromQuery] string nome)
     {
         var queryable = _appDbContext.Categorias.AsQueryable();
-        if (!string.IsNullOrEmpty(nome))
+        if (!string.IsNullOrEmpty(nome) && nome != "***")
         {
-            queryable = queryable.Where(c => c.Nome.Contains(nome));
+            queryable = queryable.Where(c => c.Nome.Contains(nome.Trim()));
         }
         await HttpContext.InserirParametroEmPageResponse(queryable, paginacao.QuantidadePorPagina);
         var retorno = await queryable.Paginar(paginacao).ToListAsync();
