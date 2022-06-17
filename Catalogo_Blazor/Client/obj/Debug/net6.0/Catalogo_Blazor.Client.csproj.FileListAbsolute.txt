@@ -1,9 +1,3 @@
-C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\Catalogo_Blazor.Client.csproj.AssemblyReference.cache
-C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\Catalogo_Blazor.Client.GeneratedMSBuildEditorConfig.editorconfig
-C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\Catalogo_Blazor.Client.AssemblyInfoInputs.cache
-C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\Catalogo_Blazor.Client.AssemblyInfo.cs
-C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\Catalogo_Blazor.Client.csproj.CoreCompileInputs.cache
-C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\Catalogo_Blazor.Client.MvcApplicationPartsAssemblyInfo.cache
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\bin\Debug\net6.0\wwwroot\_framework\blazor.boot.json
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\bin\Debug\net6.0\wwwroot\_framework\blazor.webassembly.js
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\bin\Debug\net6.0\wwwroot\_framework\Catalogo_Blazor.Client.dll
@@ -608,6 +602,12 @@ C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\bin\Debug\net6.0\icudt_EFIGS.dat
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\bin\Debug\net6.0\icudt_no_CJK.dat
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\bin\Debug\net6.0\Catalogo_Blazor.Shared.dll
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\bin\Debug\net6.0\Catalogo_Blazor.Shared.pdb
+C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\Catalogo_Blazor.Client.csproj.AssemblyReference.cache
+C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\Catalogo_Blazor.Client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\Catalogo_Blazor.Client.AssemblyInfoInputs.cache
+C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\Catalogo_Blazor.Client.AssemblyInfo.cs
+C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\Catalogo_Blazor.Client.csproj.CoreCompileInputs.cache
+C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\Catalogo_Blazor.Client.MvcApplicationPartsAssemblyInfo.cache
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\build-gz\prAskUPY.gz
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\build-gz\3lQwLrxU.gz
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\build-gz\0wYngJ3W.gz

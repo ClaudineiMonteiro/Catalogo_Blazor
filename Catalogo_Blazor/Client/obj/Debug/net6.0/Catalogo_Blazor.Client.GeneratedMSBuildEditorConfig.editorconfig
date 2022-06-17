@@ -46,6 +46,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Tests/Catalogo_Blazor/Catalogo_Blazor/Client/Pages/Produtos/Create.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHV0b3NcQ3JlYXRlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Tests/Catalogo_Blazor/Catalogo_Blazor/Client/Pages/Produtos/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHV0b3NcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Tests/Catalogo_Blazor/Catalogo_Blazor/Client/Pages/Produtos/ProdutoForm.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHV0b3NcUHJvZHV0b0Zvcm0ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Tests/Catalogo_Blazor/Catalogo_Blazor/Client/Shared/Paginacao.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFBhZ2luYWNhby5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 

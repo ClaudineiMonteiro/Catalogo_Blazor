@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "W43KRralx+84oVFvX5ZY6A5yNNvrTj9HmQbgqZ/MrOQ=",
+  "Hash": "PspCQo+gIiLCPbvi1DRmDUxpgUYaVO8MqZyj+rImFsw=",
   "Source": "Catalogo_Blazor.Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -7155,6 +7155,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\wwwroot\\Utils.js",
+      "SourceId": "Catalogo_Blazor.Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "Utils.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Utils.js"
     }
   ]
 }

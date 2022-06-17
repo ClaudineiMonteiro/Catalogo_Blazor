@@ -1,0 +1,52 @@
+﻿<EditForm Model="@Produto" OnValidSubmit="@OnValidSubmit">
+    <DataAnnotationsValidator/>
+    <ValidationSummary/>
+
+     <div class="form-group">
+        <label form="nome">Nome</label>
+        <div>
+            <InputText id="txtNomeProduto" @bind-Value="@Produto.Nome" class="form-control"/>
+            <ValidationMessage For="()=> Produto.Nome"/>
+        </div>
+    </div>
+     <div class="form-group">
+        <label form="descricao">Descrição</label>
+        <div>
+            <inputTextArea @bind-Value="@Produto.Descricao" class="form-control"/>
+            <ValidationMessage For="()=> Produto.Descricao"/>
+        </div>
+    </div>
+    <div class="form-group">
+        <label form="preco">Preço:</label>
+        <div>
+            <InputNumber @bind-Value="@Produto.Preco" class="form-control"/>
+            <ValidationMessage For="()=> Produto.Preco"/>
+        </div>
+    </div>
+    <div class="form-group">
+        <label form="categoria">Categoria:</label>
+        <div>
+            <InputText @bind-Value="@Produto.CategoriaId" class="form-control"/>
+        </div>
+    </div>
+    <div class="form-group">
+        <label form="imagem">Imagem:</label>
+        <div>
+            <InputText @bind-Value="@Produto.ImagemUrl" class="form-control"/>
+        </div>
+    </div>
+
+    <br />
+
+    <button type="submit" class="btn btn-success">@ButtonTextSubmit</button>
+    <button class="btn btn-danger" onclick="@(()=> navigation.NavigateTo("produto"))" >@ButtonTextCancelar</button>
+</EditForm>
+
+@code {
+     [Inject] public NavigationManager navigation { get; set; }
+    [Parameter] public Produto Produto { get; set; } = new Produto();
+    [Parameter] public string ButtonTextSubmit { get; set; } = "Salvar";
+    [Parameter] public string ButtonTextCancelar { get; set; } = "Cancelar";
+    [Parameter] public EventCallback OnValidSubmit { get; set; }
+
+}

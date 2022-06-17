@@ -1,0 +1,60 @@
+﻿@page "/produto"
+@inject HttpClient http
+@inject NavigationManager navigation
+
+<h2>Produtos</h2>
+
+@if (produtos == null)
+{
+    <p><em>Carregando</em></p>
+}
+else if (produtos.Count == 0)
+{
+    <p><em>Não existem produtos cadastrados....</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Descrição</th>
+                <th>Preço</th>
+                <th>Editar</th>
+                <th>Deleta</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var produto in produtos)
+            {
+                <tr>
+                    <td>produto.Nome</td>
+                    <td>produto.Descricao</td>
+                    <td>produto.Preco</td>
+                    <td><a class="btn btn-primary">Editar</a></td>
+                    <td><a class="btn btn-danger">Deletar</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+<br />
+
+<div>
+    <a class="btn btn-success" href="produto/create">Novo Produto</a>
+</div>
+
+@code {
+    List<Produto> produtos { get; set; } = new List<Produto>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await CarregaProdutos();
+    }
+
+    async Task CarregaProdutos()
+    {
+        produtos = await http.GetFromJsonAsync<List<Produto>>("api/Produto") ?? new List<Produto>(); ;
+
+    }
+}

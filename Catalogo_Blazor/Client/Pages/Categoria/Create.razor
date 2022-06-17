@@ -1,6 +1,7 @@
 ﻿@page "/categoria/create"
 @inject HttpClient http
 @inject NavigationManager navigation
+@inject IJSRuntime js
 
 <h2>Nova Categoria</h2>
 
@@ -10,6 +11,19 @@
 
 @code {
     Categoria categoriaNew = new Categoria();
+
+    protected async override Task OnAfterRenderAsync(bool firstRender)
+    {
+        if(firstRender)
+        {
+            await Focus("txtCategoriaNome");
+        }
+    }
+
+    public async Task Focus(string elementId)
+    {
+        await js.InvokeVoidAsync("focusById", elementId);
+    }
 
     async Task CriarCategoria()
     {
