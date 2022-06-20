@@ -17,6 +17,13 @@ namespace Catalogo_Blazor.Server.Controllers
             _appDbContext = appDbContext;
         }
 
+        [HttpGet("categorias/{id:int}")]
+        public async Task<ActionResult<List<Produto>>> GetProdutosCategoria( int id)
+        {
+            var produtos = await _appDbContext.Produtos.Where(p => p.CategoriaId.Equals(id)).ToListAsync();
+            return produtos;
+        }
+
         [HttpGet]
         public async Task<ActionResult<List<Produto>>> Get()
         {
