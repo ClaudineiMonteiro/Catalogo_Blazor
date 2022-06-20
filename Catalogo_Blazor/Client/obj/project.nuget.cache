@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "pZe0nFqfvwWm/h1p/xSa4QLWFHX4U9Ntoq5Nv0eK7Vsg31KBF+A6sxqUfNogJu/CEiwTabkJ4qvVTQFEOFwq+w==",
+  "dgSpecHash": "ejH1IbNTkxGLotOQjZf4Nj/Nje8QmFCZpVlKYJimL5LaaDyr8sR3GG6WrfgzjMaeuFqL9ytpPTgPrajPI4mbHg==",
   "success": true,
   "projectFilePath": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\Catalogo_Blazor.Client.csproj",
   "expectedPackageFiles": [
@@ -31,9 +31,11 @@
     "C:\\Users\\claud\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\claud\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "C:\\Users\\claud\\.nuget\\packages\\system.io.pipelines\\6.0.3\\system.io.pipelines.6.0.3.nupkg.sha512",
+    "C:\\Users\\claud\\.nuget\\packages\\system.net.http.json\\6.0.0\\system.net.http.json.6.0.0.nupkg.sha512",
     "C:\\Users\\claud\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\claud\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
     "C:\\Users\\claud\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512",
+    "C:\\Users\\claud\\.nuget\\packages\\w8lesslabs.blazor.localfiles\\3.0.0\\w8lesslabs.blazor.localfiles.3.0.0.nupkg.sha512",
     "C:\\Users\\claud\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.6\\microsoft.netcore.app.runtime.mono.browser-wasm.6.0.6.nupkg.sha512"
   ],
   "logs": []

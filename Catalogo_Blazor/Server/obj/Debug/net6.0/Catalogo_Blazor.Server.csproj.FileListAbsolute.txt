@@ -79,3 +79,4 @@ C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\obj\Debug\net6.0\refint\Catalogo
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\obj\Debug\net6.0\Catalogo_Blazor.Server.pdb
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\obj\Debug\net6.0\Catalogo_Blazor.Server.genruntimeconfig.cache
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\obj\Debug\net6.0\ref\Catalogo_Blazor.Server.dll
+C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\bin\Debug\net6.0\W8lessLabs.Blazor.LocalFiles.dll

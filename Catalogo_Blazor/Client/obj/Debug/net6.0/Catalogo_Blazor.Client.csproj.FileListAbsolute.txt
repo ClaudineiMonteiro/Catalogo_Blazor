@@ -821,3 +821,7 @@ C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\Catalogo_Blazor
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\refint\Catalogo_Blazor.Client.dll
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\Catalogo_Blazor.Client.pdb
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\ref\Catalogo_Blazor.Client.dll
+C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\bin\Debug\net6.0\wwwroot\_framework\W8lessLabs.Blazor.LocalFiles.dll
+C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\bin\Debug\net6.0\wwwroot\_framework\W8lessLabs.Blazor.LocalFiles.dll.gz
+C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\bin\Debug\net6.0\W8lessLabs.Blazor.LocalFiles.dll
+C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\build-gz\OiXJq8KU.gz

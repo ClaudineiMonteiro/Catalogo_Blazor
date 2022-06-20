@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "zUvz/GCx8EFh+Hof0N2hrfKbTSav7Omd+ldB+PWGFKg4QQo9wd1tm016JHmFrIZEh5ttmvj3KIa1gVHB23PZ0g==",
+  "dgSpecHash": "AA2JWZThSo/hhqM4u0E1Cw+UNc0dJ2Da32t2t9q6/sDZpMJXS4ddl8eCEKs3S/V9H9FvvmYURgdQopJmymAyZA==",
   "success": true,
   "projectFilePath": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Server\\Catalogo_Blazor.Server.csproj",
   "expectedPackageFiles": [
@@ -57,6 +57,7 @@
     "C:\\Users\\claud\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
     "C:\\Users\\claud\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.8.0\\system.identitymodel.tokens.jwt.6.8.0.nupkg.sha512",
     "C:\\Users\\claud\\.nuget\\packages\\system.io.pipelines\\6.0.3\\system.io.pipelines.6.0.3.nupkg.sha512",
+    "C:\\Users\\claud\\.nuget\\packages\\system.net.http.json\\6.0.0\\system.net.http.json.6.0.0.nupkg.sha512",
     "C:\\Users\\claud\\.nuget\\packages\\system.runtime.caching\\4.7.0\\system.runtime.caching.4.7.0.nupkg.sha512",
     "C:\\Users\\claud\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\claud\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
@@ -67,7 +68,8 @@
     "C:\\Users\\claud\\.nuget\\packages\\system.text.encoding.codepages\\4.7.0\\system.text.encoding.codepages.4.7.0.nupkg.sha512",
     "C:\\Users\\claud\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
     "C:\\Users\\claud\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512",
-    "C:\\Users\\claud\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
+    "C:\\Users\\claud\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
+    "C:\\Users\\claud\\.nuget\\packages\\w8lesslabs.blazor.localfiles\\3.0.0\\w8lesslabs.blazor.localfiles.3.0.0.nupkg.sha512"
   ],
   "logs": []
 }

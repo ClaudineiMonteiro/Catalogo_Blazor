@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PspCQo+gIiLCPbvi1DRmDUxpgUYaVO8MqZyj+rImFsw=",
+  "Hash": "mAuXYe+GiPIXO745EeqqRtTcAk1gpBaJl3HJsQW0/kA=",
   "Source": "Catalogo_Blazor.Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -3434,6 +3434,23 @@
       "OriginalItemSpec": "C:\\Users\\claud\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.6\\runtimes\\browser-wasm\\lib\\net6.0\\System.Xml.XPath.XDocument.dll"
     },
     {
+      "Identity": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\W8lessLabs.Blazor.LocalFiles.dll",
+      "SourceId": "Catalogo_Blazor.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/W8lessLabs.Blazor.LocalFiles.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\claud\\.nuget\\packages\\w8lesslabs.blazor.localfiles\\3.0.0\\lib\\net6.0\\W8lessLabs.Blazor.LocalFiles.dll"
+    },
+    {
       "Identity": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\WindowsBase.dll",
       "SourceId": "Catalogo_Blazor.Client",
       "SourceType": "Computed",
@@ -5627,6 +5644,23 @@
       "OriginalItemSpec": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Text.Encodings.Web.dll"
     },
     {
+      "Identity": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\obj\\Debug\\net6.0\\build-gz\\OiXJq8KU.gz",
+      "SourceId": "Catalogo_Blazor.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/W8lessLabs.Blazor.LocalFiles.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\W8lessLabs.Blazor.LocalFiles.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\W8lessLabs.Blazor.LocalFiles.dll"
+    },
+    {
       "Identity": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\obj\\Debug\\net6.0\\build-gz\\OksHfNdT.gz",
       "SourceId": "Catalogo_Blazor.Client",
       "SourceType": "Computed",
@@ -7172,6 +7206,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Utils.js"
+    },
+    {
+      "Identity": "C:\\Users\\claud\\.nuget\\packages\\w8lesslabs.blazor.localfiles\\3.0.0\\staticwebassets\\js\\fileupload.js",
+      "SourceId": "W8lessLabs.Blazor.LocalFiles",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\claud\\.nuget\\packages\\w8lesslabs.blazor.localfiles\\3.0.0\\staticwebassets\\",
+      "BasePath": "_content/W8lessLabs.Blazor.LocalFiles",
+      "RelativePath": "js/fileupload.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\claud\\.nuget\\packages\\w8lesslabs.blazor.localfiles\\3.0.0\\staticwebassets\\js\\fileupload.js"
     }
   ]
 }

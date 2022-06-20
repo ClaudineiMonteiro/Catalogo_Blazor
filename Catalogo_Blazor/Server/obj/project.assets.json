@@ -735,6 +735,21 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
+      "System.Net.Http.Json/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Text.Json": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/System.Net.Http.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/System.Net.Http.Json.dll": {}
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
       "System.Runtime.Caching/4.7.0": {
         "type": "package",
         "dependencies": {
@@ -919,12 +934,39 @@
           }
         }
       },
+      "W8lessLabs.Blazor.LocalFiles/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.WebAssembly": "6.0.1",
+          "System.Net.Http.Json": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/W8lessLabs.Blazor.LocalFiles.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/W8lessLabs.Blazor.LocalFiles.dll": {}
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        },
+        "build": {
+          "buildTransitive/W8lessLabs.Blazor.LocalFiles.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/W8lessLabs.Blazor.LocalFiles.props": {}
+        }
+      },
       "Catalogo_Blazor.Client/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Catalogo_Blazor.Shared": "1.0.0",
-          "Microsoft.AspNetCore.Components.WebAssembly": "6.0.5"
+          "Microsoft.AspNetCore.Components.WebAssembly": "6.0.5",
+          "W8lessLabs.Blazor.LocalFiles": "3.0.0"
         },
         "compile": {
           "bin/placeholder/Catalogo_Blazor.Client.dll": {}
@@ -2240,6 +2282,31 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "System.Net.Http.Json/6.0.0": {
+      "sha512": "GbIV4y344kGOKjshAKCIDCMUTTW/hyUC42wV0Y5SXEdIbaKBIHBUxZ2MOe4/ZiV2svUAGfQ0c8LGtUExpOI8tg==",
+      "type": "package",
+      "path": "system.net.http.json/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.Net.Http.Json.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/System.Net.Http.Json.dll",
+        "lib/net461/System.Net.Http.Json.xml",
+        "lib/net5.0/System.Net.Http.Json.dll",
+        "lib/net5.0/System.Net.Http.Json.xml",
+        "lib/net6.0/System.Net.Http.Json.dll",
+        "lib/net6.0/System.Net.Http.Json.xml",
+        "lib/netstandard2.0/System.Net.Http.Json.dll",
+        "lib/netstandard2.0/System.Net.Http.Json.xml",
+        "system.net.http.json.6.0.0.nupkg.sha512",
+        "system.net.http.json.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
     "System.Runtime.Caching/4.7.0": {
       "sha512": "NdvNRjTPxYvIEhXQszT9L9vJhdQoX6AQ0AlhjTU+5NqFQVuacJTfhPVAvtGWNA2OJCqRiR/okBcZgMwI6MqcZg==",
       "type": "package",
@@ -2676,6 +2743,25 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "W8lessLabs.Blazor.LocalFiles/3.0.0": {
+      "sha512": "gY1u7rVw9FBygH22e/6vq8eDAW9jetbsbKbaIaw8fq18pln9SxmDvwh61JgQV4wxBJyldYHGWRSjEBYVU1yGhQ==",
+      "type": "package",
+      "path": "w8lesslabs.blazor.localfiles/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/W8lessLabs.Blazor.LocalFiles.props",
+        "buildMultiTargeting/W8lessLabs.Blazor.LocalFiles.props",
+        "buildTransitive/W8lessLabs.Blazor.LocalFiles.props",
+        "content/Properties/launchSettings.json",
+        "contentFiles/any/net6.0/Properties/launchSettings.json",
+        "lib/net6.0/W8lessLabs.Blazor.LocalFiles.dll",
+        "staticwebassets/js/fileupload.js",
+        "w8lesslabs.blazor.localfiles.3.0.0.nupkg.sha512",
+        "w8lesslabs.blazor.localfiles.nuspec"
       ]
     },
     "Catalogo_Blazor.Client/1.0.0": {

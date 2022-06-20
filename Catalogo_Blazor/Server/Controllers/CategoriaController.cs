@@ -18,6 +18,17 @@ public class CategoriaController : ControllerBase
         _appDbContext = appDbContext;
     }
 
+    [HttpGet("todas")]
+    public async Task<ActionResult<List<Categoria>>> Get()
+    {
+        var categorias = await _appDbContext.Categorias.OrderBy(o => o.Nome).ToListAsync();
+        if (categorias == null)
+        {
+            return NotFound();
+        }
+        return Ok(categorias);
+    }
+
     [HttpGet]
     public async Task<ActionResult<List<Categoria>>> Get([FromQuery] Paginacao paginacao, [FromQuery] string nome)
     {
@@ -31,10 +42,17 @@ public class CategoriaController : ControllerBase
         return retorno;
     }
 
+    
+
     [HttpGet("{id}", Name = "GetCategoria")]
     public async Task<ActionResult<Categoria>> Get(int id)
     {
-        return await _appDbContext.Categorias.AsNoTracking().FirstOrDefaultAsync( x => x.CategoriaId == id);
+        var categoria = await _appDbContext.Categorias.AsNoTracking().FirstOrDefaultAsync( x => x.CategoriaId == id);
+        if (categoria == null)
+        {
+            return NotFound();
+        }
+        return Ok(categoria);
     }
 
     [HttpPost]

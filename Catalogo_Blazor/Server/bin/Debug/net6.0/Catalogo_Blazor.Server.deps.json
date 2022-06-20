@@ -516,6 +516,11 @@
           }
         }
       },
+      "System.Net.Http.Json/6.0.0": {
+        "dependencies": {
+          "System.Text.Json": "6.0.0"
+        }
+      },
       "System.Runtime.Caching/4.7.0": {
         "dependencies": {
           "System.Configuration.ConfigurationManager": "4.7.0"
@@ -607,10 +612,23 @@
           }
         }
       },
+      "W8lessLabs.Blazor.LocalFiles/3.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.WebAssembly": "6.0.5",
+          "System.Net.Http.Json": "6.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/W8lessLabs.Blazor.LocalFiles.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          }
+        }
+      },
       "Catalogo_Blazor.Client/1.0.0": {
         "dependencies": {
           "Catalogo_Blazor.Shared": "1.0.0",
-          "Microsoft.AspNetCore.Components.WebAssembly": "6.0.5"
+          "Microsoft.AspNetCore.Components.WebAssembly": "6.0.5",
+          "W8lessLabs.Blazor.LocalFiles": "3.0.0"
         },
         "runtime": {
           "Catalogo_Blazor.Client.dll": {}
@@ -1003,6 +1021,13 @@
       "path": "system.io.pipelines/6.0.3",
       "hashPath": "system.io.pipelines.6.0.3.nupkg.sha512"
     },
+    "System.Net.Http.Json/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GbIV4y344kGOKjshAKCIDCMUTTW/hyUC42wV0Y5SXEdIbaKBIHBUxZ2MOe4/ZiV2svUAGfQ0c8LGtUExpOI8tg==",
+      "path": "system.net.http.json/6.0.0",
+      "hashPath": "system.net.http.json.6.0.0.nupkg.sha512"
+    },
     "System.Runtime.Caching/4.7.0": {
       "type": "package",
       "serviceable": true,
@@ -1079,6 +1104,13 @@
       "sha512": "sha512-CeWTdRNfRaSh0pm2gDTJFwVaXfTq6Xwv/sA887iwPTneW7oMtMlpvDIO+U60+3GWTB7Aom6oQwv5VZVUhQRdPQ==",
       "path": "system.windows.extensions/4.7.0",
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
+    },
+    "W8lessLabs.Blazor.LocalFiles/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gY1u7rVw9FBygH22e/6vq8eDAW9jetbsbKbaIaw8fq18pln9SxmDvwh61JgQV4wxBJyldYHGWRSjEBYVU1yGhQ==",
+      "path": "w8lesslabs.blazor.localfiles/3.0.0",
+      "hashPath": "w8lesslabs.blazor.localfiles.3.0.0.nupkg.sha512"
     },
     "Catalogo_Blazor.Client/1.0.0": {
       "type": "project",
