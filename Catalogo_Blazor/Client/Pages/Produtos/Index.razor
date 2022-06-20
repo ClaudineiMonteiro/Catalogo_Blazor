@@ -32,7 +32,7 @@ else
                     <td>@produto.Descricao</td>
                     <td>@produto.Preco</td>
                     <td><a class="btn btn-primary" href="produto/edit/@produto.ProdutoId">Editar</a></td>
-                    <td><a class="btn btn-danger">Deletar</a></td>
+                    <td><a class="btn btn-danger" @onclick="@(()=> DeletarProduto(produto.ProdutoId))">Deletar</a></td>
                 </tr>
             }
         </tbody>
@@ -40,12 +40,18 @@ else
 }
 <br />
 
+<ConfirmaExclusao @ref="confirma" onCancela="@CancelaConfirma" onConfirma="@DeletaConfirma">
+    <div>Deseja realamente excluir esta produto?</div>
+</ConfirmaExclusao>
+
 <div>
     <a class="btn btn-success" href="produto/create">Novo Produto</a>
 </div>
 
 @code {
     List<Produto> produtos { get; set; } = new List<Produto>();
+    ConfirmaExclusao confirma = new ConfirmaExclusao();
+    int codigoProduto;
 
     protected override async Task OnInitializedAsync()
     {
@@ -56,5 +62,23 @@ else
     {
         produtos = await http.GetFromJsonAsync<List<Produto>>("api/Produto") ?? new List<Produto>(); ;
 
+    }
+
+    void DeletarProduto(int produtoId)
+    {
+        confirma.Exibir();
+        codigoProduto = produtoId;
+    }
+
+    void CancelaConfirma()
+    {
+        confirma.Ocultar();
+    }
+
+    async Task DeletaConfirma()
+    {
+        await http.DeleteAsync($"api/produto/{codigoProduto}");
+        confirma.Ocultar();
+        await CarregaProdutos();
     }
 }

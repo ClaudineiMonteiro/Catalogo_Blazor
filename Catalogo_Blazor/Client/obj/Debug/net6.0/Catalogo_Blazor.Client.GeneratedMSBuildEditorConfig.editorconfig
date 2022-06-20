@@ -26,10 +26,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcmlhXENhdGVnb3JpYUZvcm0ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Tests/Catalogo_Blazor/Catalogo_Blazor/Client/Pages/Categoria/ConfirmaExclusao.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcmlhXENvbmZpcm1hRXhjbHVzYW8ucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Tests/Catalogo_Blazor/Catalogo_Blazor/Client/Pages/Categoria/Create.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcmlhXENyZWF0ZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
@@ -60,6 +56,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Tests/Catalogo_Blazor/Catalogo_Blazor/Client/Pages/Produtos/ProdutoForm.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHV0b3NcUHJvZHV0b0Zvcm0ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Tests/Catalogo_Blazor/Catalogo_Blazor/Client/Shared/ConfirmaExclusao.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbmZpcm1hRXhjbHVzYW8ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Tests/Catalogo_Blazor/Catalogo_Blazor/Client/Shared/InputImagem.razor]
