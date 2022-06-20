@@ -1,63 +1,47 @@
 ﻿@using W8lessLabs.Blazor.LocalFiles
 
 <div>
-    <label>@Label</label>
-    <div>
-        <button type="button" @onclick="SelecionarImagem">Selecionar Imagem</button>
-        <FileSelect @ref="imagemSelecaoArquivo" Accept=".jpg,.jpeg,.png"></FileSelect>
+    <label>@Titulo</label><br />
+    @if (ImagemBase64 != null)
+    {
+        <img class="rounded" src="data:image/jpeg;base64, @ImagemBase64" style="width:200px;" />
+    }
+
+    <div class="d-flex mt-2" style="width:200px">
+        <button type="button" class="btn btn-primary btn-sm w-50 mr-2" @onclick="SelecionarImagem">Selecionar</button>
+        <button type="button" class="btn btn-danger btn-sm w-50" @onclick="@(()=> OnExcluirImagem.InvokeAsync())">Excluir</button>
     </div>
+
+    <FileSelect @ref="fileSelect" Accept=".jpg,.jpeg,.png" FilesSelected="FilesSelectedHandler"></FileSelect>
+
 </div>
-<div>
-    @if (imagemBase64 != null)
-    {
-        <div>
-            <div>
-                <div style="margin:10px;">
-                    <img src="data:image/jpeg;base64, @imagemBase64" stype="width: 150px;"/>
-                 </div>
-            </div>
-        </div>
-    }
-    @if (ImagemRemota != null)
-    {
-        <div>
-            <div>
-                <img src="@ImagemRemota" style="width: 150px;"/>
-                <img src="data:image/jpeg;base64, @ImagemRemota" style="width: 150px;"/>
-            </div>
-        </div>
-    }
-</div>
+
 
 @code {
-    [Parameter] public string Label { get; set; } = "Imagem";
-    [Parameter] public string ImagemRemota { get; set; }
-    [Parameter] public EventCallback<string> ImagemSelecionada { get; set; }
 
-    private string imagemBase64;
-    private FileSelect imagemSelecaoArquivo;
+
+    [Parameter] public string Titulo { get; set; } = "Imagem";
+
+    [Parameter] public string ImagemBase64 { get; set; }
+
+    [Parameter] public EventCallback<string> OnSelecionarImagem { get; set; }
+
+    [Parameter] public EventCallback OnExcluirImagem { get; set; }
+
+
+    private FileSelect fileSelect;
+
 
     private void SelecionarImagem()
     {
-        imagemSelecaoArquivo.SelectFiles();
+        fileSelect.SelectFiles();
     }
 
-
-    private async Task ImagemArquivoSelecionado(SelectedFile[] arquivosSelecionados)
+    async Task FilesSelectedHandler(SelectedFile[] selectedFiles)
     {
-        var arquivoSelecionado = arquivosSelecionados.FirstOrDefault();
-
-        using (var fileReader = await imagemSelecaoArquivo.OpenFileStreamAsync(arquivoSelecionado.Name))
-        {
-            byte[] buff = null;
-            BinaryReader br = new BinaryReader(fileReader);
-            long numBytes = new FileInfo(arquivoSelecionado.Name).Length;
-            buff = br.ReadBytes((int) numBytes);
-            imagemBase64 = Convert.ToBase64String(buff);
-            await ImagemSelecionada.InvokeAsync(imagemBase64);
-            ImagemRemota = null;
-            StateHasChanged();
-        }
-
+        var selectedFile = selectedFiles[0];
+        var fileBytes = await fileSelect.GetFileBytesAsync(selectedFile.Name);
+        var imagemBase64 = Convert.ToBase64String(fileBytes);
+        await OnSelecionarImagem.InvokeAsync(imagemBase64);
     }
 }

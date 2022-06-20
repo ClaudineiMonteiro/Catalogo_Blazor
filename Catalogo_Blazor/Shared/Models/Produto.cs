@@ -10,7 +10,7 @@ namespace Catalogo_Blazor.Shared.Models
         [MaxLength(200)]
         public string? Descricao { get; set; }
         public decimal Preco { get; set; }
-        public string? IamagemUrl { get; set; }
+        public string? ImagemUrl { get; set; }
         public int CategoriaId { get; set; }
         public virtual Categoria? Categoria { get; set; }
     }
