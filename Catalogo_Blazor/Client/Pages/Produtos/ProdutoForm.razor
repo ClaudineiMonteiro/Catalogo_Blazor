@@ -34,7 +34,7 @@
                 {
                     @foreach (var categoria in categorias)
                     {
-                        <option value="@categoria.CategoriaId" class="form-control">
+                        <option value="@categoria.CategoriaId" selected="@(categoria.CategoriaId == Produto.CategoriaId ? true : false)" class="form-control">
                             @categoria.Nome
                         </option>
                     }
@@ -54,7 +54,7 @@
 </EditForm>
 
 @code {
-    List<Categoria>? categorias;
+    List<Categoria> categorias;
 
     [Inject] public NavigationManager navigation { get; set; }
     [Inject] public HttpClient http { get; set; }
@@ -71,7 +71,7 @@
 
     private async Task CarregarCategorias()
     {
-        categorias = await http.GetFromJsonAsync<List<Categoria>>("api/Categoria/todas");
+        categorias = await http.GetFromJsonAsync<List<Categoria>>("api/Categoria/todas") ?? new List<Categoria>();
     }
 
     void CategoriaSelectionChange(ChangeEventArgs e)
