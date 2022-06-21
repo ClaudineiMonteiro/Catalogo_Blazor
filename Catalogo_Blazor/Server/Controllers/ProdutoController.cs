@@ -1,6 +1,6 @@
 ﻿using Catalogo_Blazor.Server.Context;
+using Catalogo_Blazor.Server.Utils;
 using Catalogo_Blazor.Shared.Models;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -24,11 +24,24 @@ namespace Catalogo_Blazor.Server.Controllers
             return produtos;
         }
 
-        [HttpGet]
+        [HttpGet("todos")]
         public async Task<ActionResult<List<Produto>>> Get()
         {
             var produtos = await _appDbContext.Produtos.AsNoTracking().ToListAsync();
             return produtos;
+        }
+
+        [HttpGet]
+        public async Task<ActionResult<List<Produto>>> Get([FromQuery] Catalogo_Blazor.Shared.Recursos.Paginacao paginacao, [FromQuery] string nome)
+        {
+            var queryable = _appDbContext.Categorias.AsQueryable();
+            if (!string.IsNullOrEmpty(nome) && nome != "***")
+            {
+                queryable = queryable.Where(c => c.Nome.Contains(nome.Trim()));
+            }
+            await HttpContext.InserirParametroEmPageResponse(queryable, paginacao.QuantidadePorPagina);
+            var retorno = await queryable.Paginar(paginacao).ToListAsync();
+            return Ok(retorno);
         }
 
         [HttpGet("{id}", Name = "GetProdutoById")]

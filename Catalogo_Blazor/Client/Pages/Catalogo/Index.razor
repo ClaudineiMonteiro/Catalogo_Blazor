@@ -1,4 +1,5 @@
 ﻿@page "/catalogo"
+@page "/catalogo/{categoriaId:int}"
 @inject HttpClient http
 
 <div class="form-group">
@@ -9,7 +10,7 @@
                 {
                     @foreach (var categoria in categorias)
                     {
-                        <option value="@categoria.CategoriaId" selected="@(categoria.CategoriaId ==1 ? true : false)" class="form-control">
+                        <option value="@categoria.CategoriaId" selected="@(categoria.CategoriaId == categoriaId ? true : false)" class="form-control">
                             @categoria.Nome
                         </option>
                     }
@@ -40,6 +41,7 @@ else
                         <h4 class="pull-rigth">@produto.Preco</h4>
                         <h4 class="card-title">@produto.Nome</h4>
                         <h4 class="card-text">@produto.Descricao</h4>
+                        <a href="produto/detalhe/@produto.ProdutoId">Detalhes</a>
                     </div>
                 </div>
             </div>
@@ -52,13 +54,22 @@ else
     public List<Produto> produtos { get; set; }
     public List<Categoria> categorias { get; set; }
     private int codigoCategoria;
+    [Parameter] public int categoriaId { get; set; }
 
-    protected async override Task OnInitializedAsync()
+
+    protected async override Task OnParametersSetAsync()
     {
         categorias = await http.GetFromJsonAsync<List<Categoria>>("api/Categoria/todas") ?? new List<Categoria>();
-        codigoCategoria = categorias.FirstOrDefault().CategoriaId;
-        await CarregaProdutos();
-    }
+        if (categoriaId == 0)
+        {
+            codigoCategoria = categorias.FirstOrDefault().CategoriaId;
+        }
+        else
+        {
+            codigoCategoria = categoriaId;
+        }
+
+        await CarregaProdutos();    }
 
     async Task CarregaProdutos()
     {

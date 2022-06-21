@@ -1,8 +1,24 @@
 ﻿@page "/produto"
+@using System.Text.Json
 @inject HttpClient http
 @inject NavigationManager navigation
 
 <h2>Produtos</h2>
+<div>
+    <a class="btn btn-success" href="produto/create">Novo Produto</a>
+</div>
+
+<br />
+
+<form class="row gx-3 gy-2 align-items-center">
+  <div class="col-sm-3">
+    <input type="text" class="form-control mb-2 mr-sm-2" @bind="nomeFiltro" placeholder="Filtrar pelo nome"/>
+  </div>
+  <div class="col-sm-3">
+    <button type="button" class="btn btn-primary mr-sm-2 mb-2" @onclick="Filtrar">Filtrar</button>
+    <button type="button" class="btn btn-danger mb-2" @onclick="LimparFiltro">Limpar</button>
+  </div>  
+</form>
 
 @if (produtos == null)
 {
@@ -44,24 +60,54 @@ else
     <div>Deseja realamente excluir esta produto?</div>
 </ConfirmaExclusao>
 
-<div>
-    <a class="btn btn-success" href="produto/create">Novo Produto</a>
-</div>
+<Paginacao QuantidadeTotalPaginas="QuantidadeTotalPaginas" PaginaAtual="PaginaAtual" Raio="2" PaginaSelecionada="PaginaSelecionada">
+
+</Paginacao>
+
 
 @code {
     List<Produto> produtos { get; set; } = new List<Produto>();
     ConfirmaExclusao confirma = new ConfirmaExclusao();
     int codigoProduto;
+    private string nomeFiltro = string.Empty;
+
+    private int QuantidadeTotalPaginas;
+    private int PaginaAtual = 1;
 
     protected override async Task OnInitializedAsync()
     {
         await CarregaProdutos();
     }
 
-    async Task CarregaProdutos()
+    private async Task PaginaSelecionada(int pagina)
     {
-        produtos = await http.GetFromJsonAsync<List<Produto>>("api/Produto") ?? new List<Produto>(); ;
+        PaginaAtual = pagina;
+        await CarregaProdutos(pagina);
+    }
 
+    private async Task CarregaProdutos(int pagina = 1, int quantidadePorPagina = 5)
+    {
+        var address = $"api/produto?pagina={pagina}&quantidadePorPagina={quantidadePorPagina}&nome={(string.IsNullOrEmpty(nomeFiltro) ? "***" : nomeFiltro)}";
+        var httpResponse = await http.GetAsync(address);
+        if (httpResponse.IsSuccessStatusCode)
+        {
+            QuantidadeTotalPaginas = int.Parse(httpResponse.Headers.GetValues("totalPaginas").FirstOrDefault() ?? "1");
+            var responseString = await httpResponse.Content.ReadAsStringAsync();
+            produtos = JsonSerializer.Deserialize<List<Produto>>(responseString, new JsonSerializerOptions() { PropertyNameCaseInsensitive = true});
+        }       
+    }
+
+     private async Task Filtrar()
+    {
+        PaginaAtual = 1;
+        await CarregaProdutos();
+    }
+
+    private async Task LimparFiltro()
+    {
+        nomeFiltro = string.Empty;
+        PaginaAtual = 1;
+        await CarregaProdutos();
     }
 
     void DeletarProduto(int produtoId)
