@@ -3,74 +3,80 @@
 @inject HttpClient Http
 @using System.Text.Json;
 
-<h2>Categorias</h2>
-<div>
-    <a class="btn btn-success" href="categoria/create">Criar Categoria</a>
-</div>
-<br />
+<AuthorizeView>
+    <Authorized>
+        <h2>Categorias</h2>
+        <div>
+            <a class="btn btn-success" href="categoria/create">Criar Categoria</a>
+        </div>
+        <br />
 
-<form class="row gx-3 gy-2 align-items-center">
-  <div class="col-sm-3">
-    <input type="text" class="form-control mb-2 mr-sm-2" @bind="nomeFiltro" placeholder="Filtrar pelo nome"/>
-  </div>
-  <div class="col-sm-3">
-    <button type="button" class="btn btn-primary mr-sm-2 mb-2" @onclick="Filtrar">Filtrar</button>
-    <button type="button" class="btn btn-danger mb-2" @onclick="LimparFiltro">Limpar</button>
-  </div>  
-</form>
+        <form class="row gx-3 gy-2 align-items-center">
+          <div class="col-sm-3">
+            <input type="text" class="form-control mb-2 mr-sm-2" @bind="nomeFiltro" placeholder="Filtrar pelo nome"/>
+          </div>
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary mr-sm-2 mb-2" @onclick="Filtrar">Filtrar</button>
+            <button type="button" class="btn btn-danger mb-2" @onclick="LimparFiltro">Limpar</button>
+          </div>  
+        </form>
 
-@if(categorias == null)
-{
-    <p><em>Carregando...</em></p>
-}
-else if (categorias.Count == 0)
-{
-    if (string.IsNullOrEmpty(nomeFiltro) || nomeFiltro == "***")
-    {
-        <p><em>Não existem categorias cadastradas...</em></p>
-    }
-    else
-    {
-        <p><em>@("Não existem categorias cadastradas para nome = "+ @nomeFiltro)</em></p>
-    }
-}
-else
-{
-    <table class="table">
-        <thead>
-            <th>Categoria</th>
-            <th>Descrição</th>
-            <th>Editar</th>
-            <th>Excluir</th>
-        </thead>
-        <tbody>
-            @foreach (var categoria in categorias)
-           {               
-                <tr>
-                    <td>@categoria.Nome</td>
-                    <td>@categoria.Descricao</td>
-                    <td>
-                        <a class="btn btn-primary" href="categoria/edit/@categoria.CategoriaId">Editar</a>
-                    </td>
-                    <td>
-                        <a class="btn btn-danger" @onclick="@(()=> DeletarCategoria(categoria.CategoriaId))" style="color:white">Deletar</a>
-                    </td>
-                </tr>
-           }
+        @if(categorias == null)
+        {
+            <p><em>Carregando...</em></p>
+        }
+        else if (categorias.Count == 0)
+        {
+            if (string.IsNullOrEmpty(nomeFiltro) || nomeFiltro == "***")
+            {
+                <p><em>Não existem categorias cadastradas...</em></p>
+            }
+            else
+            {
+                <p><em>@("Não existem categorias cadastradas para nome = "+ @nomeFiltro)</em></p>
+            }
+        }
+        else
+        {
+            <table class="table">
+                <thead>
+                    <th>Categoria</th>
+                    <th>Descrição</th>
+                    <th>Editar</th>
+                    <th>Excluir</th>
+                </thead>
+                <tbody>
+                    @foreach (var categoria in categorias)
+                   {               
+                        <tr>
+                            <td>@categoria.Nome</td>
+                            <td>@categoria.Descricao</td>
+                            <td>
+                                <a class="btn btn-primary" href="categoria/edit/@categoria.CategoriaId">Editar</a>
+                            </td>
+                            <td>
+                                <a class="btn btn-danger" @onclick="@(()=> DeletarCategoria(categoria.CategoriaId))" style="color:white">Deletar</a>
+                            </td>
+                        </tr>
+                   }
 
-        </tbody>
-    </table>
-}
+                </tbody>
+            </table>
+        }
 
-<ConfirmaExclusao @ref="confirma" onCancela="@CancelaConfirma" onConfirma="@DeletaConfirma">
-    <div>Deseja realamente excluir esta categoria?</div>
-</ConfirmaExclusao>
+        <ConfirmaExclusao @ref="confirma" onCancela="@CancelaConfirma" onConfirma="@DeletaConfirma">
+            <div>Deseja realamente excluir esta categoria?</div>
+        </ConfirmaExclusao>
 
 
-<Paginacao QuantidadeTotalPaginas="QuantidadeTotalPaginas" PaginaAtual="PaginaAtual" Raio="2" PaginaSelecionada="PaginaSelecionada">
+        <Paginacao QuantidadeTotalPaginas="QuantidadeTotalPaginas" PaginaAtual="PaginaAtual" Raio="2" PaginaSelecionada="PaginaSelecionada">
 
-</Paginacao>
-
+        </Paginacao>
+    </Authorized>
+    <NotAuthorized>
+        <h2>Usuário não autorizado...</h2>
+    </NotAuthorized>
+</AuthorizeView>
 @code {
     #region Properties
     private List<Categoria>? categorias { get; set; }

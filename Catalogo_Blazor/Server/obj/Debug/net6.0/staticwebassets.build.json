@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0ZzUZYKv36nC6ep1cAEvvvHhVMZ2XpAqbPFai7WpZJg=",
+  "Hash": "Kt8aiCjEplE/lMg7XJMJ43NWsstQpo6ualL2F6Q050k=",
   "Source": "Catalogo_Blazor.Server",
   "BasePath": "_content/Catalogo_Blazor.Server",
   "Mode": "Default",
@@ -264,7 +264,24 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\claud\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.5\\lib\\net6.0\\Microsoft.AspNetCore.Authorization.dll"
+      "OriginalItemSpec": "C:\\Users\\claud\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.6\\lib\\net6.0\\Microsoft.AspNetCore.Authorization.dll"
+    },
+    {
+      "Identity": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.dll",
+      "SourceId": "Catalogo_Blazor.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Authorization.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\claud\\.nuget\\packages\\microsoft.aspnetcore.components.authorization\\6.0.6\\lib\\net6.0\\Microsoft.AspNetCore.Components.Authorization.dll"
     },
     {
       "Identity": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll",
@@ -281,7 +298,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\claud\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.5\\lib\\net6.0\\Microsoft.AspNetCore.Components.dll"
+      "OriginalItemSpec": "C:\\Users\\claud\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.6\\lib\\net6.0\\Microsoft.AspNetCore.Components.dll"
     },
     {
       "Identity": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.dll",
@@ -349,7 +366,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\claud\\.nuget\\packages\\microsoft.aspnetcore.metadata\\6.0.5\\lib\\net6.0\\Microsoft.AspNetCore.Metadata.dll"
+      "OriginalItemSpec": "C:\\Users\\claud\\.nuget\\packages\\microsoft.aspnetcore.metadata\\6.0.6\\lib\\net6.0\\Microsoft.AspNetCore.Metadata.dll"
     },
     {
       "Identity": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.CSharp.dll",
@@ -3871,23 +3888,6 @@
       "OriginalItemSpec": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Linq.Queryable.dll"
     },
     {
-      "Identity": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\obj\\Debug\\net6.0\\build-gz\\3lQwLrxU.gz",
-      "SourceId": "Catalogo_Blazor.Client",
-      "SourceType": "Project",
-      "ContentRoot": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Components.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll"
-    },
-    {
       "Identity": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\obj\\Debug\\net6.0\\build-gz\\3W5NcIkT.gz",
       "SourceId": "Catalogo_Blazor.Client",
       "SourceType": "Project",
@@ -4124,6 +4124,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Diagnostics.Tools.dll"
+    },
+    {
+      "Identity": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\obj\\Debug\\net6.0\\build-gz\\91iMgxEL.gz",
+      "SourceId": "Catalogo_Blazor.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Authorization.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll"
     },
     {
       "Identity": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\obj\\Debug\\net6.0\\build-gz\\9N2pjbCJ.gz",
@@ -4396,6 +4413,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\icudt_EFIGS.dat"
+    },
+    {
+      "Identity": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\obj\\Debug\\net6.0\\build-gz\\Dei8Hjz2.gz",
+      "SourceId": "Catalogo_Blazor.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll"
     },
     {
       "Identity": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\obj\\Debug\\net6.0\\build-gz\\DjyH+o7X.gz",
@@ -4959,6 +4993,23 @@
       "OriginalItemSpec": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Private.Xml.Linq.dll"
     },
     {
+      "Identity": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\obj\\Debug\\net6.0\\build-gz\\IRXwbQLZ.gz",
+      "SourceId": "Catalogo_Blazor.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Authorization.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.dll"
+    },
+    {
       "Identity": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\obj\\Debug\\net6.0\\build-gz\\iTpW+cm2.gz",
       "SourceId": "Catalogo_Blazor.Client",
       "SourceType": "Project",
@@ -5008,23 +5059,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.dll"
-    },
-    {
-      "Identity": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\obj\\Debug\\net6.0\\build-gz\\IXyyZPpZ.gz",
-      "SourceId": "Catalogo_Blazor.Client",
-      "SourceType": "Project",
-      "ContentRoot": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Metadata.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll"
     },
     {
       "Identity": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\obj\\Debug\\net6.0\\build-gz\\j+aYu3eu.gz",
@@ -5365,6 +5399,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Reflection.Extensions.dll"
+    },
+    {
+      "Identity": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\obj\\Debug\\net6.0\\build-gz\\LzigF2HK.gz",
+      "SourceId": "Catalogo_Blazor.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Metadata.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll"
     },
     {
       "Identity": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\obj\\Debug\\net6.0\\build-gz\\LZxf+YIE.gz",
@@ -5875,23 +5926,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Threading.Tasks.Extensions.dll"
-    },
-    {
-      "Identity": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\obj\\Debug\\net6.0\\build-gz\\prAskUPY.gz",
-      "SourceId": "Catalogo_Blazor.Client",
-      "SourceType": "Project",
-      "ContentRoot": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Authorization.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll"
     },
     {
       "Identity": "C:\\Tests\\Catalogo_Blazor\\Catalogo_Blazor\\Client\\obj\\Debug\\net6.0\\build-gz\\q9nysbib.gz",

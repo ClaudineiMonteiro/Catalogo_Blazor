@@ -4,9 +4,18 @@
 @inject NavigationManager navigation
 
 <h2>Produtos</h2>
-<div>
-    <a class="btn btn-success" href="produto/create">Novo Produto</a>
-</div>
+
+<AuthorizeView Roles="Admin">
+    <Authorized>
+        <div>
+            <a class="btn btn-success" href="produto/create">Novo Produto</a>
+        </div>
+    </Authorized>
+    <NotAuthorized>
+        <h2>Somente usuário Admin pode incluir um produto</h2>
+    </NotAuthorized>
+</AuthorizeView>
+
 
 <br />
 

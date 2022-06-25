@@ -22,6 +22,18 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Tests/Catalogo_Blazor/Catalogo_Blazor/Client/Pages/Autentica/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0ZW50aWNhXExvZ2luLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Tests/Catalogo_Blazor/Catalogo_Blazor/Client/Pages/Autentica/Logout.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0ZW50aWNhXExvZ291dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Tests/Catalogo_Blazor/Catalogo_Blazor/Client/Pages/Backup.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmFja3VwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Tests/Catalogo_Blazor/Catalogo_Blazor/Client/Pages/Catalogo/Detalhe.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0YWxvZ29cRGV0YWxoZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
@@ -66,12 +78,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHV0b3NcUHJvZHV0b0Zvcm0ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Tests/Catalogo_Blazor/Catalogo_Blazor/Client/Shared/Aviso.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEF2aXNvLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Tests/Catalogo_Blazor/Catalogo_Blazor/Client/Shared/ConfirmaExclusao.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbmZpcm1hRXhjbHVzYW8ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Tests/Catalogo_Blazor/Catalogo_Blazor/Client/Shared/InputImagem.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXElucHV0SW1hZ2VtLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Tests/Catalogo_Blazor/Catalogo_Blazor/Client/Shared/MenuAuthentication.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1lbnVBdXRoZW50aWNhdGlvbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Tests/Catalogo_Blazor/Catalogo_Blazor/Client/Shared/Paginacao.razor]

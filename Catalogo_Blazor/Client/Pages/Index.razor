@@ -5,3 +5,17 @@
 <h1>Catálogo de Produtos</h1>
 <hr />
 <h2>Nei.net</h2>
+
+<AuthorizeView>
+    <Authorized>
+        <h2>Olá, @context.User.Identity.Name!</h2>
+        <br/>
+        @if (@context.User.IsInRole("Admin"))
+        {
+            <text>Usuário Admin</text>
+        }
+    </Authorized>
+    <NotAuthorized>
+        <h2>Usuário não Autorizado</h2>
+    </NotAuthorized>
+</AuthorizeView>

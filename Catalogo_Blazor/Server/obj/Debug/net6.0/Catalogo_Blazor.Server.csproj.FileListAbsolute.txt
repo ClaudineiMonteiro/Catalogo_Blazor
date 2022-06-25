@@ -1,3 +1,11 @@
+C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\obj\Debug\net6.0\Catalogo_Blazor.Server.csproj.AssemblyReference.cache
+C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\obj\Debug\net6.0\Catalogo_Blazor.Server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\obj\Debug\net6.0\Catalogo_Blazor.Server.AssemblyInfoInputs.cache
+C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\obj\Debug\net6.0\Catalogo_Blazor.Server.AssemblyInfo.cs
+C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\obj\Debug\net6.0\Catalogo_Blazor.Server.csproj.CoreCompileInputs.cache
+C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\obj\Debug\net6.0\Catalogo_Blazor.Server.MvcApplicationPartsAssemblyInfo.cache
+C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\obj\Debug\net6.0\Catalogo_Blazor.Server.RazorAssemblyInfo.cache
+C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\obj\Debug\net6.0\Catalogo_Blazor.Server.RazorAssemblyInfo.cs
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\bin\Debug\net6.0\Catalogo_Blazor.Client.staticwebassets.runtime.json
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\bin\Debug\net6.0\appsettings.Development.json
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\bin\Debug\net6.0\appsettings.json
@@ -14,12 +22,17 @@ C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\bin\Debug\net6.0\Catalogo_Blazor
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\bin\Debug\net6.0\Catalogo_Blazor.Server.dll
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\bin\Debug\net6.0\Catalogo_Blazor.Server.pdb
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\bin\Debug\net6.0\Humanizer.dll
+C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\bin\Debug\net6.0\Microsoft.AspNetCore.Authorization.dll
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\bin\Debug\net6.0\Microsoft.AspNetCore.Components.dll
+C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Authorization.dll
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Forms.dll
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Web.dll
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\bin\Debug\net6.0\Microsoft.AspNetCore.Components.WebAssembly.dll
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\bin\Debug\net6.0\Microsoft.AspNetCore.Components.WebAssembly.Server.dll
+C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\bin\Debug\net6.0\Microsoft.AspNetCore.Metadata.dll
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
@@ -28,6 +41,8 @@ C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\bin\Debug\net6.0\Microsoft.Entit
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\bin\Debug\net6.0\Microsoft.Identity.Client.dll
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
@@ -46,6 +61,7 @@ C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\bin\Debug\net6.0\System.Runtime.
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\bin\Debug\net6.0\System.Security.Permissions.dll
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\bin\Debug\net6.0\W8lessLabs.Blazor.LocalFiles.dll
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
@@ -62,14 +78,6 @@ C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\bin\Debug\net6.0\Catalogo_Blazor
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\bin\Debug\net6.0\Catalogo_Blazor.Shared.dll
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\bin\Debug\net6.0\Catalogo_Blazor.Client.pdb
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\bin\Debug\net6.0\Catalogo_Blazor.Shared.pdb
-C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\obj\Debug\net6.0\Catalogo_Blazor.Server.csproj.AssemblyReference.cache
-C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\obj\Debug\net6.0\Catalogo_Blazor.Server.GeneratedMSBuildEditorConfig.editorconfig
-C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\obj\Debug\net6.0\Catalogo_Blazor.Server.AssemblyInfoInputs.cache
-C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\obj\Debug\net6.0\Catalogo_Blazor.Server.AssemblyInfo.cs
-C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\obj\Debug\net6.0\Catalogo_Blazor.Server.csproj.CoreCompileInputs.cache
-C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\obj\Debug\net6.0\Catalogo_Blazor.Server.MvcApplicationPartsAssemblyInfo.cache
-C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\obj\Debug\net6.0\Catalogo_Blazor.Server.RazorAssemblyInfo.cache
-C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\obj\Debug\net6.0\Catalogo_Blazor.Server.RazorAssemblyInfo.cs
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\obj\Debug\net6.0\staticwebassets.build.json
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\obj\Debug\net6.0\staticwebassets.development.json
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\obj\Debug\net6.0\scopedcss\bundle\Catalogo_Blazor.Server.styles.css
@@ -79,4 +87,3 @@ C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\obj\Debug\net6.0\refint\Catalogo
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\obj\Debug\net6.0\Catalogo_Blazor.Server.pdb
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\obj\Debug\net6.0\Catalogo_Blazor.Server.genruntimeconfig.cache
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\obj\Debug\net6.0\ref\Catalogo_Blazor.Server.dll
-C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Server\bin\Debug\net6.0\W8lessLabs.Blazor.LocalFiles.dll
