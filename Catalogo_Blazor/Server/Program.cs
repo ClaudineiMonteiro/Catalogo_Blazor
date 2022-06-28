@@ -13,6 +13,7 @@ builder.Services.AddDataConfig(builder.Configuration.GetConnectionString("Defaul
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 builder.Services.AddIdentity<IdentityUser, IdentityRole>()
+    .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<AppDbContext>()
     .AddDefaultTokenProviders();
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)

@@ -206,7 +206,6 @@ C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\bin\Debug\net6.0\wwwroot\_framew
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\bin\Debug\net6.0\wwwroot\_framework\System.Xml.XmlSerializer.dll
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\bin\Debug\net6.0\wwwroot\_framework\System.Xml.XPath.dll
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\bin\Debug\net6.0\wwwroot\_framework\System.Xml.XPath.XDocument.dll
-C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\bin\Debug\net6.0\wwwroot\_framework\W8lessLabs.Blazor.LocalFiles.dll
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\bin\Debug\net6.0\wwwroot\_framework\WindowsBase.dll
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\bin\Debug\net6.0\wwwroot\_framework\System.Security.Cryptography.OpenSsl.dll.gz
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\bin\Debug\net6.0\wwwroot\_framework\System.Diagnostics.Contracts.dll.gz
@@ -338,7 +337,6 @@ C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\bin\Debug\net6.0\wwwroot\_framew
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\bin\Debug\net6.0\wwwroot\_framework\System.Reflection.Metadata.dll.gz
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\bin\Debug\net6.0\wwwroot\_framework\icudt_CJK.dat.gz
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\bin\Debug\net6.0\wwwroot\_framework\System.Text.Encodings.Web.dll.gz
-C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\bin\Debug\net6.0\wwwroot\_framework\W8lessLabs.Blazor.LocalFiles.dll.gz
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\bin\Debug\net6.0\wwwroot\_framework\System.Reflection.DispatchProxy.dll.gz
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\bin\Debug\net6.0\wwwroot\_framework\System.Security.Principal.dll.gz
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\bin\Debug\net6.0\wwwroot\_framework\System.Net.Requests.dll.gz
@@ -438,7 +436,6 @@ C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\bin\Debug\net6.0\Microsoft.Exten
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\bin\Debug\net6.0\Microsoft.JSInterop.dll
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\bin\Debug\net6.0\Microsoft.JSInterop.WebAssembly.dll
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\bin\Debug\net6.0\System.IO.Pipelines.dll
-C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\bin\Debug\net6.0\W8lessLabs.Blazor.LocalFiles.dll
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\bin\Debug\net6.0\Microsoft.CSharp.dll
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\bin\Debug\net6.0\Microsoft.VisualBasic.Core.dll
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\bin\Debug\net6.0\Microsoft.VisualBasic.dll
@@ -617,9 +614,6 @@ C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\bin\Debug\net6.0\Catalogo_Blazor
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\build-gz\91iMgxEL.gz
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\build-gz\Dei8Hjz2.gz
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\build-gz\IRXwbQLZ.gz
-C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\build-gz\0wYngJ3W.gz
-C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\build-gz\V8G7j3jE.gz
-C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\build-gz\hDqPPuhU.gz
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\build-gz\LzigF2HK.gz
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\build-gz\qU47y0ON.gz
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\build-gz\fPUQLTqX.gz
@@ -635,10 +629,7 @@ C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\build-gz\1Z+YY3
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\build-gz\Ra8+4b2s.gz
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\build-gz\SXnO+dw9.gz
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\build-gz\GQoNY+6b.gz
-C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\build-gz\BzoAGG83.gz
-C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\build-gz\+Lm+W1nZ.gz
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\build-gz\VuqDIaeR.gz
-C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\build-gz\OiXJq8KU.gz
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\build-gz\Vzt6JC6a.gz
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\build-gz\pIzy3nlO.gz
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\build-gz\ffQXZO+M.gz
@@ -816,7 +807,6 @@ C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\build-gz\6zATuo
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\build-gz\SmOMajkC.gz
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\build-gz\mvqcQHBD.gz
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\build-gz\GJyrZylt.gz
-C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\build-gz\p44A9hkt.gz
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\blazor.boot.json
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\staticwebassets.build.json
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\staticwebassets.development.json
@@ -829,3 +819,9 @@ C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\Catalogo_Blazor
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\refint\Catalogo_Blazor.Client.dll
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\Catalogo_Blazor.Client.pdb
 C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\ref\Catalogo_Blazor.Client.dll
+C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\build-gz\GqkPDRtz.gz
+C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\build-gz\PkiY+6tu.gz
+C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\build-gz\uFsor5p+.gz
+C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\build-gz\lw92Pl8K.gz
+C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\build-gz\P7xl+z8u.gz
+C:\Tests\Catalogo_Blazor\Catalogo_Blazor\Client\obj\Debug\net6.0\build-gz\ITBcILFI.gz

@@ -58,16 +58,12 @@
             },
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",
-              "version": "[6.0.5, )"
+              "version": "[6.0.6, )"
             },
             "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.5, )"
-            },
-            "W8lessLabs.Blazor.LocalFiles": {
-              "target": "Package",
-              "version": "[3.0.0, )"
+              "version": "[6.0.6, )"
             }
           },
           "imports": [

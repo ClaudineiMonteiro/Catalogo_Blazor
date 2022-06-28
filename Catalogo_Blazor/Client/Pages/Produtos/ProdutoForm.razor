@@ -43,8 +43,11 @@
         </div>
     </div>
 
-    <div class="form-group">
-        <InputImagem Titulo="Foto" ImagemBase64="@Produto.ImagemUrl" OnSelecionarImagem="SelecionarImagem" OnExcluirImagem="ExcluirImagem" />
+    <div class="form-group row">
+        <InputFile OnChange="CarregaImagem"></InputFile>
+    </div>
+    <div class="col-2">
+        <ImagemFoto ImagemRemota = "@Produto.ImagemUrl"/>
     </div>
 
     <br />
@@ -62,7 +65,9 @@
     [Parameter] public string ButtonTextSubmit { get; set; } = "Salvar";
     [Parameter] public string ButtonTextCancelar { get; set; } = "Cancelar";
     [Parameter] public EventCallback OnValidSubmit { get; set; }
-    [Parameter] public string ImagemRemota { get; set; }
+    [Parameter] public string? ImagemRemota { get; set; }
+
+    long maxFileSize = 1024 * 1024 * 15;
 
     protected override async Task OnInitializedAsync()
     {
@@ -81,11 +86,20 @@
             Produto.CategoriaId = id;
         }
     }
-    private void ImagemSelecionada(string imagemBase64)
+
+    async Task CarregaImagem(InputFileChangeEventArgs e)
     {
-        Produto.ImagemUrl = imagemBase64;
-        ImagemRemota = null;
-        Produto.CategoriaId = categorias.FirstOrDefault()?.CategoriaId ?? 0;
+        var format = "image/jpeg";
+        var imageFile = await e.File.RequestImageFileAsync(format, 640, 480);
+        using var fileStream = imageFile.OpenReadStream(maxFileSize);
+        using var memoryStream = new MemoryStream();
+        await fileStream.CopyToAsync(memoryStream);
+        ImagemRemota = $"data:{format};base64,{Convert.ToBase64String(memoryStream.ToArray())}";
+        if (ImagemRemota != null)
+        {
+            Produto.ImagemUrl = ImagemRemota;
+            ImagemRemota = null;
+        }
     }
 
     private void SelecionarImagem(string imagemBase64)

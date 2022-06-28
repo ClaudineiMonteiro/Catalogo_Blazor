@@ -19,3 +19,27 @@
         <h2>Usuário não Autorizado</h2>
     </NotAuthorized>
 </AuthorizeView>
+
+@code{
+    [CascadingParameter] 
+    public Task<AuthenticationState> authenticationState { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await authenticationState;
+        var user = authState.User;
+
+        if (user.Identity.IsAuthenticated)
+        {
+            Console.WriteLine($"Bem-vindo {user.Identity.Name}");
+            if (user.IsInRole("Admin"))
+            {
+                Console.WriteLine("Você faz parte do perfil Admin");
+            }
+        }
+        else
+        {
+            Console.WriteLine("Usuário não autenticado");
+        }
+    }
+}

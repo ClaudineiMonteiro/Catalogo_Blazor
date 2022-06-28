@@ -6,7 +6,7 @@ public class UserInfo
 {
     [Required(ErrorMessage="Informe o email")]
     [EmailAddress(ErrorMessage = "Formato do email inválido")]
-    public string Email { get; set; }
+    public string? Email { get; set; }
     [Required(ErrorMessage ="Informe o password")]
-    public string Password { get; set; }
+    public string? Password { get; set; }
 }

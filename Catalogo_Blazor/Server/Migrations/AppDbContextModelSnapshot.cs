@@ -102,6 +102,22 @@ namespace Catalogo_Blazor.Server.Migrations
                         .HasFilter("[NormalizedName] IS NOT NULL");
 
                     b.ToTable("AspNetRoles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "36260b6c-f87a-4c1a-a884-b3b48ac94f2f",
+                            ConcurrencyStamp = "1770d2c2-300d-41d6-b412-f78fee761af5",
+                            Name = "User",
+                            NormalizedName = "USER"
+                        },
+                        new
+                        {
+                            Id = "642c9481-6efd-48c3-99b0-4339706eb88d",
+                            ConcurrencyStamp = "0d114503-3b6b-4096-acc1-2542c93f5291",
+                            Name = "Admin",
+                            NormalizedName = "ADMIN"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
