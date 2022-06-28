@@ -57,8 +57,8 @@ else
                     <td>@produto.Nome</td>
                     <td>@produto.Descricao</td>
                     <td>@produto.Preco</td>
-                    <td><a class="btn btn-primary" href="produto/edit/@produto.ProdutoId">Editar</a></td>
-                    <td><a class="btn btn-danger" @onclick="@(()=> DeletarProduto(produto.ProdutoId))">Deletar</a></td>
+                    <td><a class="btn btn-primary" href="produto/edit/@produto.ProdutoId">Editar</a> </td>
+                    <td><a class="btn btn-danger" @onclick="@(()=> DeletarProduto(produto.ProdutoId))" style=" color : white">Deletar</a> </td>
                 </tr>
             }
         </tbody>
