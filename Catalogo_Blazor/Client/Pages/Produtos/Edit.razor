@@ -8,19 +8,15 @@
 
 @code {
     private Produto produto = new Produto();
-    private string imagemRemota { get; set; }
-
     [Parameter] public int produtoid { get; set; }
 
     protected async override Task OnParametersSetAsync()
     {
-        produto = await http.GetFromJsonAsync<Produto>($"api/produto/{produtoid}") ?? new Produto();
-        imagemRemota = produto.ImagemUrl;
+        produto = await http.GetFromJsonAsync<Produto>($"api/produto/{produtoid}");
     }
 
     async Task EditarProduto()
     {
-        imagemRemota = null;
         await http.PutAsJsonAsync("api/produto", produto);
         navigation.NavigateTo("produto");
     }

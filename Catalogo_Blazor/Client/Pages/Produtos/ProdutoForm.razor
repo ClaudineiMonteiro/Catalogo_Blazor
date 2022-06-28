@@ -46,6 +46,7 @@
     <div class="form-group row">
         <InputFile OnChange="CarregaImagem"></InputFile>
     </div>
+
     <div class="col-2">
         <ImagemFoto ImagemRemota = "@Produto.ImagemUrl"/>
     </div>
@@ -53,13 +54,13 @@
     <br />
 
     <button type="submit" class="btn btn-success">@ButtonTextSubmit</button>
-    <button class="btn btn-danger" onclick="@(()=> navigation.NavigateTo("produto"))" >@ButtonTextCancelar</button>
+    <button class="btn btn-danger" onclick="@(()=> navigation?.NavigateTo("produto"))" >@ButtonTextCancelar</button>
 </EditForm>
 
 @code {
-    List<Categoria> categorias;
+    List<Categoria>? categorias;
 
-    [Inject] public NavigationManager navigation { get; set; }
+    [Inject] public NavigationManager? navigation { get; set; }
     [Inject] public HttpClient http { get; set; }
     [Parameter] public Produto Produto { get; set; } = new Produto();
     [Parameter] public string ButtonTextSubmit { get; set; } = "Salvar";
@@ -71,10 +72,15 @@
 
     protected override async Task OnInitializedAsync()
     {
-        await CarregarCategorias();
+        Produto.ImagemUrl = null;
+        await CarregaCategorias();
+        if (Produto.CategoriaId == 0)
+        {
+            Produto.CategoriaId = categorias[0].CategoriaId;
+        }
     }
 
-    private async Task CarregarCategorias()
+    private async Task CarregaCategorias()
     {
         categorias = await http.GetFromJsonAsync<List<Categoria>>("api/Categoria/todas") ?? new List<Categoria>();
     }
@@ -91,10 +97,12 @@
     {
         var format = "image/jpeg";
         var imageFile = await e.File.RequestImageFileAsync(format, 640, 480);
+
         using var fileStream = imageFile.OpenReadStream(maxFileSize);
         using var memoryStream = new MemoryStream();
         await fileStream.CopyToAsync(memoryStream);
         ImagemRemota = $"data:{format};base64,{Convert.ToBase64String(memoryStream.ToArray())}";
+
         if (ImagemRemota != null)
         {
             Produto.ImagemUrl = ImagemRemota;

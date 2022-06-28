@@ -34,14 +34,22 @@ namespace Catalogo_Blazor.Server.Controllers
         [HttpGet]
         public async Task<ActionResult<List<Produto>>> Get([FromQuery] Catalogo_Blazor.Shared.Recursos.Paginacao paginacao, [FromQuery] string nome)
         {
-            var queryable = _appDbContext.Categorias.AsQueryable();
-            if (!string.IsNullOrEmpty(nome) && nome != "***")
+            try
             {
-                queryable = queryable.Where(c => c.Nome.Contains(nome.Trim()));
+                var queryable = _appDbContext?.Produtos?.AsQueryable();
+                if (!string.IsNullOrEmpty(nome) && nome != "***")
+                {
+                    queryable = queryable?.Where(c => c.Nome.Contains(nome.Trim()));
+                }
+                await HttpContext.InserirParametroEmPageResponse(queryable, paginacao.QuantidadePorPagina);
+                var retorno = await queryable.Paginar(paginacao).ToListAsync();
+                return Ok(retorno);
             }
-            await HttpContext.InserirParametroEmPageResponse(queryable, paginacao.QuantidadePorPagina);
-            var retorno = await queryable.Paginar(paginacao).ToListAsync();
-            return Ok(retorno);
+            catch (Exception ex)
+            {
+
+                throw new Exception(ex.StackTrace);
+            }
         }
 
         [HttpGet("{id}", Name = "GetProdutoById")]
